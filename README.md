@@ -25,7 +25,7 @@ charts:
 cat helmstyle.yaml | helmstyle apply 
 
 
-## Why not just use helmfile?
+## Helmstyle vs Helmfile
 * Helmfile currently requires you to give it a file path or directly with a helmfile in it.   We would like to inline helmfile config with other yaml config, or just pass yaml directly to a go api to install
 * Helmfile relies on a helm binary.   We would like to to just use helm and helmfile as go libraries for easier distribution
 
