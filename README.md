@@ -29,7 +29,7 @@ helmstyle:
 ## Helmstyle vs Helmfile
 * Helmfile currently requires you to give it a file path or directly with a helmfile in it.  With helmstyle you can just embed yaml into an existing document, or pass it via stdin, or direclty into the golang api without requiring file or directory access
 * Helmfile calls out helm binary directly via go exec.  Helmstyle works standalone
-* Helmstyle has a much smaller list of features and provides a flexible and stable go api
+* Helmstyle has a much smaller list of features and provides a simple go api
 
 
 
