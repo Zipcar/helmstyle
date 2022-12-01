@@ -22,7 +22,7 @@ charts:
           memory: "2Gi"
 ```
 
-helmstyle apply -f helmstyle.yaml
+`helmstyle apply -f helmstyle.yaml`
 
 
 ## Helmstyle vs Helmfile
