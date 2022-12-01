@@ -1,11 +1,12 @@
 # helmstyle
 Deploy your helm charts with style
 
+
 ## How to use
 
 helmstyle.yaml
 ```yaml
-charts:
+helmstyle:
   repositories:
   - name: bitnami
     url: https://charts.bitnami.com/bitnami
@@ -26,10 +27,10 @@ charts:
 
 
 ## Helmstyle vs Helmfile
-* Helmfile currently requires you to give it a file path or directly with a helmfile in it.   We would like to inline helmfile config with other yaml config, or just pass yaml directly to a go api to install
-* Helmfile relies on a helm binary.   We would like to to just use helm and helmfile as go libraries for easier distribution
+* Helmfile currently requires you to give it a file path or directly with a helmfile in it.  With helmstyle you can just embed yaml into an existing document, or pass it via stdin, or direclty into the golang api without requiring file or directory access
+* Helmfile calls out helm binary directly via go exec.  Helmstyle works standalone
+* Helmstyle has a much smaller list of features and provides a flexible and stable go api
 
-Helmstyle is intended to be a vastly simplified version of helmfile suitable for use as a go libary.  
 
 
 
